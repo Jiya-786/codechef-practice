@@ -1,0 +1,132 @@
+## \## Food Chain
+
+## A great deal of energy is lost as metabolic heat when the organisms from one trophic level are consumed by the next level.
+
+## 
+
+## Suppose in Chefland the energy reduces by a factor of 
+
+## K i.e, if initially, the energy is 
+
+## X
+
+## X, then the transfer of energy to the next tropic level is:
+
+## &nbsp;
+
+## This limits the length of foodchain which is defined to be the highest level receiving non-zero energy.
+
+## 
+
+## 
+
+## E is the energy at the lowest tropic level. Given E and K for an ecosystem, find the maximum length of foodchain.
+
+## 
+
+## Note: 
+
+## ⌊
+
+## x
+
+## ⌋
+
+## ⌋ denoted the floor function, and it returns the greatest integer that is less than or equal to 
+
+## x
+
+## x (i.e rounds down to the nearest integer). For example, 
+
+## ⌊
+
+## 1.4
+
+## ⌋
+
+## =
+
+## 1
+
+## ⌊1.4⌋=1, 
+
+## ⌊
+
+## 5
+
+## ⌋
+
+## =
+
+## 5
+
+## ⌊5⌋=5, 
+
+## ⌊
+
+## −
+
+## 1.5
+
+## ⌋
+
+## =
+
+## −
+
+## 2
+
+## ⌊−1.5⌋=−2, 
+
+## ⌊
+
+## −
+
+## 3
+
+## ⌋
+
+## =
+
+## −
+
+## 3
+
+## ⌊−3⌋=−3 , 
+
+## ⌊
+
+## 0
+
+## ⌋
+
+## =
+
+## 0
+
+## ⌊0⌋=0.
+
+## 
+
+## \## Input Format
+
+## First line will contain 
+
+## T
+
+## T, number of testcases. Then the testcases follow.
+
+## Each testcase contains a single line of input, two integers 
+
+## E
+
+## ,
+
+## K
+
+## E,K.
+
+## \## Output Format
+
+## For each testcase, output in a single line answer to the problem.
+
