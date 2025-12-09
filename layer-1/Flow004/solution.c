@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <math.h>
 
 int main(){
     
@@ -9,12 +8,15 @@ int main(){
     for(int i=0;i<t;i++){
         int n;
         scanf("%d",&n);
-        int count=-1;
-        while((n%(pow(10,i))))!=0){
-            count+=1;
-            i++;
+        
+        int last=n%10;
+        
+        int first=n;
+        while(n>=10){
+            first=first/10;
         }
-        printf("%d",((n%10)+(n-(n%(pow(10,count)))))/pow(10,count));
+        
+        printf(first+last);
         
     }
     
