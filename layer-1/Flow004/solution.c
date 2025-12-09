@@ -12,11 +12,11 @@ int main(){
         int last=n%10;
         
         int first=n;
-        while(n>=10){
+        while(first>=10){
             first=first/10;
         }
         
-        printf(first+last);
+        printf("%d\n",first+last);
         
     }
     
