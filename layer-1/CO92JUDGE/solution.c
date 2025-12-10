@@ -12,10 +12,10 @@ int main(){
         int b[n];
         
         for (int i=0;i<n;i++){
-            scanf(" %d",&a[i]);             // if we write only "%c, it will consider spaces                                  also as characters. if we write " %c", it will                                 delete leading spaces and consider only the                                    characters as characters no spaces.
+            scanf(" %d",&a[i]);}            // if we write only "%c, it will consider spaces                                 also as characters. if we write " %c", it will                                 delete leading spaces and consider only the                                    characters as characters no spaces.
                                              // but this not hold for %d or anything else.     others will always condier the same and not consider space as characters regardless of inout has space or not
-            scanf(" %d",&b[i]);
-        }
+       for (int i=0;i<n;i++){
+            scanf(" %d",&b[i]);}       
         
         int best_time_a=0;
         int best_time_b=0;
