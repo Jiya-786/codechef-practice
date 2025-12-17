@@ -1,3 +1,4 @@
+// my soln-(scroll down for better method)
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -72,3 +73,33 @@ int main(){
 }
 }
 
+// AI hint soln (simpler and shorter)
+int main(){
+    int t;
+    scanf("%d",&t);
+    while(t--){
+        int n,k;
+        scanf("%d%d",&n,&k);
+        int a[n];
+        for(int i=0;i<n;i++){
+            scanf("%d",&a[i]);
+        }
+        
+        qsort(a,n,sizeof(int),cmp);
+        
+        for(int i=0;i<n && k>0;i++){
+            if(a[i]<0){
+                a[i]=-a[i];
+                k--;
+            }
+        }
+        
+        int ans=0;
+        for(int i=0;i<n;i++){
+            if(a[i]>0) ans+=a[i];
+        }
+        
+        printf("%d\n",ans);
+        
+    }
+}
